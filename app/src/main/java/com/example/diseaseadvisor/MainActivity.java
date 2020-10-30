@@ -1,42 +1,35 @@
-package com.example.diseaseadvisor.ui.login;
+package com.example.diseaseadvisor;
 
-import android.app.Activity;
-
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.diseaseadvisor.MainActivity;
-import com.example.diseaseadvisor.R;
-import com.example.diseaseadvisor.ui.login.LoginViewModel;
-import com.example.diseaseadvisor.ui.login.LoginViewModelFactory;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.GoogleAuthProvider;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class LoginActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "LoginRegisterActivity";
     int AUTHUI_REQUEST_CODE = 10001;
@@ -83,21 +76,21 @@ public class LoginActivity extends AppCompatActivity {
 
                 }
 
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
-                this.finish();
+                    Intent intent = new Intent(this, MainActivity.class);
+                    startActivity(intent);
+                    this.finish();
 
-            } else {
-                // login failed
-                IdpResponse response = IdpResponse.fromResultIntent(data);
-                if (response == null) {
-                    Log.d(TAG, "onActivityResult: user cancelled sign in request");
                 } else {
-                    Log.d(TAG, "onACtivityResult: ", response.getError());
-                }
+                    // login failed
+                    IdpResponse response = IdpResponse.fromResultIntent(data);
+                    if (response == null) {
+                        Log.d(TAG, "onActivityResult: user cancelled sign in request");
+                    } else {
+                        Log.d(TAG, "onACtivityResult: ", response.getError());
+                    }
 
+                }
             }
         }
-    }
 
-}
+    }

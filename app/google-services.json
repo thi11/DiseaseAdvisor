@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "46626209780",
+    "firebase_url": "https://disease-advisor-1604000999645.firebaseio.com",
+    "project_id": "disease-advisor-1604000999645",
+    "storage_bucket": "disease-advisor-1604000999645.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46626209780:android:75dafcb0e704f7248a03a1",
+        "android_client_info": {
+          "package_name": "com.example.diseaseadvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46626209780-vv5i8oofqbm1dmddke0d4366h53offdk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.diseaseadvisor",
+            "certificate_hash": "188afd0074576eae0f2da272469d63d29404116e"
+          }
+        },
+        {
+          "client_id": "46626209780-25pm7n61s9rl4qs4k7uvt5tivchij72o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMflaK2l-p4mEGtx3F9X4KT1WPnUgUE_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46626209780-25pm7n61s9rl4qs4k7uvt5tivchij72o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
