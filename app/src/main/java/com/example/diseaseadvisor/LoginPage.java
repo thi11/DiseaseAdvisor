@@ -58,7 +58,7 @@ public class LoginPage extends AppCompatActivity {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 Log.d(TAG, "onActivityResult: " + user.getEmail());
                 if (user.getMetadata().getCreationTimestamp() == user.getMetadata().getLastSignInTimestamp()) {
-                    Toast.makeText(this, "Welcome to Disease Advisor", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Welcome to DA Interventions", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(this, "Welcome Back", Toast.LENGTH_SHORT).show();
 
