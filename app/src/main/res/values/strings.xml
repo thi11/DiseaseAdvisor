@@ -15,4 +15,27 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    //africa links
+    <string
+        name="WHOafrica"><a href="https://www.afro.who.int/news/news-releases">WHO Africa News</a></string>
+    <string
+        name="HIV"><a href="https://www.aidsmap.com/news ">HIV/AIDS</a></string>
+    <string
+        name="malaria"><a href = "https://medicalxpress.com/conditions/malaria/">Malaria</a></string>
+    <string
+        name="tb"><a href = "https://www.sciencedaily.com/news/health_medicine/tuberculosis/">Tuberculosis</a></string>
+    //asia links
+    <string name="yellowfever"><a href = "https://www.who.int/emergencies/diseases/yellow-fever/news/en/">Yellow Fever</a>  </string>
+    <string name="dengue"><a href = "https://www.sciencedaily.com/news/health_medicine/dengue_fever/ ">Dengue Fever</a>  </string>
+    <string name="chikunguya"><a href = "https://www.sciencedaily.com/news/health_medicine/chikungunya/   ">Chikunguya</a>  </string>
+    <string name="WHOasia"><a href = "https://www.who.int/southeastasia/news/releases">WHO Asia News</a>  </string>
+    //europe
+    <string name="WHOeurope"><a href = "https://www.euro.who.int/en/home/sections/news/news?root_node_selection=475768">WHO Europe News</a>  </string>
+    <string name="measles"><a href = "https://www.euro.who.int/en/health-topics/communicable-diseases/measles-and-rubella/news/news/news?root_node_selection=53290">Measles</a>  </string>
+    //south america
+    <string name="WHOamericas"><a href = "https://www.paho.org/en/news/press-releases">WHO Americas News</a>  </string>
+    <string name="cholera"><a href = "https://www.news-medical.net/condition/Cholera  ">Cholera</a>  </string>
+    <string name="leptospirosis"><a href = "https://www.sciencedaily.com/releases/2021/01/210126134026.htm  ">Leptospirosis</a>  </string>
+
+
 </resources>
